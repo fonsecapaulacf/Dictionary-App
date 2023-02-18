@@ -13,6 +13,11 @@
   font-size: calc(10px + 2vmin);
 }
 
+.App-footer {
+  color:aqua
+}
+
+
 .App-logo {
   max-width: 100px;
   height:100px;
