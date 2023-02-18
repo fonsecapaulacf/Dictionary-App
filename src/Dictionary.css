@@ -1,0 +1,10 @@
+.Dictionary{
+    display: block;
+    margin: auto ;
+    border-radius: 2%;
+    text-align: center;
+    max-width: 350px;
+}
+.form-control{
+    max-width: 300px;
+}
