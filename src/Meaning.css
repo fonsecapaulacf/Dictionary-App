@@ -1,0 +1,22 @@
+.Meaning .partOfSpeech {
+    font-size: 30px;
+    font-weight:600;
+    text-transform: capitalize;
+}
+
+.Meaning .definition {
+    font-size: 20px;
+    font-weight:400;
+    text-transform: capitalize;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.Meaning .example {
+    padding: 20px;
+    text-align: left;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-weight:400;
+    text-transform: capitalize;
+}
