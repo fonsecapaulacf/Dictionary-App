@@ -13,10 +13,19 @@
 }
 
 .Meaning .example {
-    padding: 20px;
+    padding:0px 20px;
     text-align: left;
     color: rgb(34, 34, 34);
     font-size: 15px;
     font-weight:400;
     text-transform: capitalize;
+}
+
+.Meaning .synonyms {
+    padding:0px 20px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+
 }
