@@ -6,15 +6,20 @@ export default function Results(props){
     if (props.results){
    return (
    <div className="Results">
+    <section>
 
-    <h2>{props.results.word}</h2>
-    <p>{props.results.phonetic}</p>
+    <span className="SearchedWord">{props.results.word}   </span>
+    <span className="Phonetics">/{props.results.phonetic}/</span>
     
-    
+    </section>
+<br/>
+
     <h3>{props.results.meanings.map(function(meaning, index){
     if (index<3){
     return (
-        <div key={index}> <Meaning meaning={meaning}/> </div> 
+
+        <section className="Meaning" key={index}>
+         <Meaning meaning= {meaning}/> </section>
         );
     } else return null;
    })

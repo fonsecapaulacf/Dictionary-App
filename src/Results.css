@@ -1,8 +1,7 @@
+.Results .SearchedWord{
+    font-size: 35px;
+}
 
-.Results h2{
-    background-color: rgb(0, 255, 183);
-    font-size: 30px; }
-
-.Results h3{
-    background-color: rgb(250, 252, 228);
-    font-size: 30px; }
+.Results .Phonetics{
+    font-size: 15px;
+}

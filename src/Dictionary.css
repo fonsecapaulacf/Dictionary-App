@@ -1,4 +1,7 @@
+
+
 .Dictionary {
+   
     display: block;
     margin: auto ;
     border-radius: 2%;
@@ -7,3 +10,23 @@
 .form-control{
     max-width: 300px;
 }
+
+.WordChoice{
+    margin:20px;
+    padding: 20px;
+}
+
+input{
+    width: 100%;
+    border-radius: 8px;
+    padding:6px 10px;
+}
+
+section{
+    background: rgb(255, 255, 255);
+    padding:20px;
+    box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+    border-radius: 20px;
+    border:1px solid beige;
+}
+

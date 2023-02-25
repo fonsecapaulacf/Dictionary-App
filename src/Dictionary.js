@@ -11,24 +11,19 @@ export default function Dictionary(props) {
     let [photos, setPhotos] = useState(null);
 
 
-   function handleResponse(response){
-    console.log(response.data.meanings);
-    setDefinition(response.data);
+    function handleResponse(response){
+        setDefinition(response.data);
     }
 
     function handlePexelsResponse(response) {
-    setPhotos(response.data.photos);
-      }
+        setPhotos(response.data.photos);
+    }
 
 
     function search() {
-
-    
         let key=`a2ae14484420ao51b3294b9fbftb12ae`;
         let apiUrl=`https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${key}`;
         axios.get(apiUrl).then(handleResponse) ;
-
-  
 
         let pexelsApiKey = "Lsptdc7IyWf25b4j2s9WUDLfyHXHdV5RE9m2x9XQPyH0PqFeN1uiwi1J";
         let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=6`;
@@ -37,38 +32,40 @@ export default function Dictionary(props) {
     }
 
 
-
     function handleSubmit(event){
         event.preventDefault();
         search();
     }
 
    function handleKeywordChange(event){
-    setKeyword(event.target.value);
-   }
+        setKeyword(event.target.value);
+    }
 
 
    function load(){
-    setLoaded(true);
-    search();
+        setLoaded(true);
+        search();
    }
 
-   if(loaded){
-    return (
-    <div className="Dictionary">
-        <section>
-        <h1>What word do you want to search for?</h1>
-        <form onSubmit={handleSubmit}>
-            <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>  
-        </form>
-    
-        </section>
+        if(loaded){
+        return (
+        <div className="Dictionary">
+
+            <section className="Form">
+                <p className="WordChoice">Type a word 👇</p>
+
+                <form onSubmit={handleSubmit}> <br/>
+                    <input type="search" onChange={handleKeywordChange} defaultValue={props.defaultKeyword}/>  
+                </form>
+            </section>
+            <br/>
         <Results results={definition} /> 
+        <br/>
         <Photos photos={photos} />
-    </div>
+        </div>
     );
-} else {
-    load();
+    } else {
+        load();
     return "Loading";
-}
+    }
 }
