@@ -14,11 +14,8 @@ function App() {
       <main className="Dictionary"> <Dictionary defaultKeyword="great"/> </main>
 
 
-      <footer>
+    <footer>
     
-        <div className="d-flex justify-content-center mb-5 ">
-        <a href="mailto:fonseca.paula.cf@gmail.com" target="_blank" title="Email" className="email-link">fonseca.paula.cf@gmail.com</a></div>
-
         <p className="text-center text-muted mt-5">This website was coded by Paula Fonseca, and is <a href="https://github.com/fonsecapaulacf/Dictionary-App/" target="_blank" title="Git Hub">open sourced</a> </p>
 
     </footer>
