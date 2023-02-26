@@ -1,7 +1,12 @@
+.Results{
+    text-align: left;
+}
+
 .Results .SearchedWord{
+    text-align: left;
     font-size: 35px;
 }
 
 .Results .Phonetics{
-    font-size: 15px;
+    text-align: left;
 }

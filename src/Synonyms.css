@@ -1,5 +1,7 @@
 li{
-    font-size: 12px;
+    margin:10px;
+    color: black;
+    font-size: 20px;
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 30px;
 }
