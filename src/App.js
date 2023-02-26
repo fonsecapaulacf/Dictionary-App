@@ -16,7 +16,7 @@ function App() {
 
     <footer>
     
-        <p className="text-center text-muted mt-5">This website was coded by Paula Fonseca, and is <a href="https://github.com/fonsecapaulacf/Dictionary-App/" target="_blank" title="Git Hub">open sourced</a> </p>
+        <p className="text-center text-muted mt-5">This website was coded by Paula Fonseca, and is <a href="https://github.com/fonsecapaulacf/Dictionary-App/" rel="noreferrer" target="_blank" title="Git Hub">open sourced</a> </p>
 
     </footer>
       
